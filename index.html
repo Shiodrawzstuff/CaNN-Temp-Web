@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cactus News Network (CaNN) | The Desert Nation News - INSMP</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+  <!-- ================= TOP TICKER & QUICK LINKS ================= -->
+  <aside class="top-ticker-bar" aria-label="Breaking News Bar">
+    <div class="ticker-badge" id="tickerBadge">⚡ CaNN LIVE</div>
+    <div class="ticker-content">
+      <span class="ticker-text" id="tickerText">Loading latest desert dispatches...</span>
+    </div>
+    <div class="top-links">
+      <!-- Language Switcher -->
+      <div class="lang-switcher" aria-label="Language Selector">
+        <button class="lang-btn active" id="langBtnEn" onclick="setLanguage('en')">EN 🇬🇧</button>
+        <button class="lang-btn" id="langBtnTh" onclick="setLanguage('th')">TH 🇹🇭</button>
+      </div>
+
+      <!-- Theme Switcher -->
+      <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+        🌙 Dark
+      </button>
+
+      <a href="https://insmp.miraheze.org/wiki/Main_Page" target="_blank" rel="noopener noreferrer" class="top-link-btn" id="wikiLinkBtn" title="Visit INSMP Wiki">
+        📚 INSMP Wiki
+      </a>
+      <a href="https://discord.com/invite/bwaaa" target="_blank" rel="noopener noreferrer" class="top-link-btn" id="discordLinkBtn" title="Join INSMP Discord">
+        💬 Discord Server
+      </a>
+    </div>
+  </aside>
+
+  <!-- ================= GRAND MASTHEAD ================= -->
+  <header class="masthead-container">
+    <div class="masthead-meta">
+      <span id="volMeta">Vol. IV • Official Desert Gazette</span>
+      <span id="archiveMeta">Edition Archive: May – July 2026</span>
+      <span id="nationMeta">The One Star Republic • INSMP</span>
+    </div>
+
+    <div class="masthead-center">
+      <div class="masthead-ornament">
+        <div class="ornament-line"></div>
+        <div class="sun-icon">☀️</div>
+        <div class="ornament-line"></div>
+      </div>
+
+      <!-- Official Logo & Title -->
+      <div class="masthead-brand-wrapper">
+        <img src="assets/logo.png" alt="Cactus News Network Official Logo" class="official-logo-img">
+        <div class="masthead-text-group">
+          <h1 class="site-title" id="siteTitle">Cactus News Network</h1>
+          <h2 class="site-subheading" id="siteSubtitle">The Desert Nation News by Cactus News Network</h2>
+        </div>
+      </div>
+
+      <p class="masthead-tagline" id="siteTagline">"Accept no substitutes — if it doesn't have the thorns, it isn't Cactus News."</p>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav" aria-label="Primary Navigation">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a class="nav-link active" id="navFrontpage" onclick="switchCategory('All')">Frontpage</a></li>
+          <li><a class="nav-link" id="navBreaking" onclick="switchCategory('Breaking')">Breaking News</a></li>
+          <li><a class="nav-link" id="navGeopolitics" onclick="switchCategory('Geopolitics')">Geopolitics & Factions</a></li>
+          <li><a class="nav-link" id="navPolitics" onclick="switchCategory('Politics')">Politics & Law</a></li>
+          <li><a class="nav-link" id="navInterviews" onclick="switchCategory('Interviews')">Special Interviews</a></li>
+          <li><a class="nav-link" id="navSudoku" onclick="scrollToElement('sudokuSection')">Daily Sudoku</a></li>
+          <li><a class="nav-link" id="navClassifieds" onclick="scrollToElement('classifiedsSection')">Classified Ads</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="view-toggle-btn" id="viewToggleBtn" title="Toggle Classic Broadsheet Layout">
+            📜 Newspaper Sheet View
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN TWO-COLUMN LAYOUT ================= -->
+  <main class="main-layout">
+
+    <!-- LEFT COLUMN: News Feed & Archives -->
+    <section class="news-feed-column">
+      
+      <!-- Search & Category Filters -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search headlines, Lacha, Mirage Tower, laws, reporters...">
+        </div>
+        <div class="category-pills" id="categoryPills">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+
+      <!-- Featured Frontpage Lead Story -->
+      <div id="featuredLeadContainer"></div>
+
+      <!-- Articles Grid -->
+      <div class="articles-grid" id="articlesGrid">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- RIGHT COLUMN: Sidebar Widgets -->
+    <aside class="sidebar">
+
+      <!-- INSMP & Desert Nation Server Card -->
+      <div class="sidebar-widget">
+        <h3 class="widget-title">
+          <span id="serverCardTitle">🌐 INSMP Server Status</span>
+          <span class="status-badge"><span style="font-size: 8px;">●</span> <span id="serverStatusText">Online</span></span>
+        </h3>
+        <div class="server-status-card">
+          <div class="server-header">
+            <span class="server-name" id="sidebarNationName">The Desert Nation</span>
+            <span style="font-size: 0.75rem; color: var(--secondary-blue); font-weight:700;">Western Block</span>
+          </div>
+          <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;" id="serverDesc">
+            Official communication and lore hub for INSMP and the Dry Nations Confederation.
+          </p>
+          <div class="server-links">
+            <a href="https://insmp.miraheze.org/wiki/Main_Page" target="_blank" rel="noopener noreferrer" class="btn-server-action btn-wiki" id="btnWikiLink">
+              📖 INSMP Wiki
+            </a>
+            <a href="https://discord.com/invite/bwaaa" target="_blank" rel="noopener noreferrer" class="btn-server-action btn-discord" id="btnDiscordLink">
+              💬 Discord
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Playable Today's Sudoku (Signature CaNN feature) -->
+      <div class="sidebar-widget" id="sudokuSection">
+        <h3 class="widget-title">
+          <span id="sudokuTitle">🧩 Today's Sudoku</span>
+          <span style="font-size: 0.75rem; color: var(--secondary-blue); font-weight: 600;" id="sudokuBadge">Playable</span>
+        </h3>
+        <div class="sudoku-container">
+          <select id="sudokuPuzzleSelect" class="sudoku-selector"></select>
+          <div class="sudoku-board" id="sudokuBoard"></div>
+          
+          <div class="sudoku-controls" id="sudokuNumPad"></div>
+          
+          <div class="sudoku-action-btns">
+            <button class="sudoku-action-btn" id="btnCheckSudoku">✓ Check Grid</button>
+            <button class="sudoku-action-btn" id="btnResetSudoku">↺ Reset</button>
+          </div>
+          <div id="sudokuStatus" style="margin-top: 8px; text-align: center; min-height: 20px;"></div>
+        </div>
+      </div>
+
+      <!-- Desert Nation Government Officials -->
+      <div class="sidebar-widget">
+        <h3 class="widget-title" id="leadershipTitle">🏛️ Desert Leadership</h3>
+        <ul id="officialsList" style="list-style: none; font-size: 0.82rem; display: flex; flex-direction: column; gap: 10px;">
+          <!-- Populated by app.js -->
+        </ul>
+      </div>
+
+      <!-- Classified Ads & In-Game Notices -->
+      <div class="sidebar-widget" id="classifiedsSection">
+        <h3 class="widget-title" id="classifiedsTitle">📢 Classified Ads & Notice Board</h3>
+        <div id="adsContainer"></div>
+      </div>
+
+    </aside>
+  </main>
+
+  <!-- ================= ARTICLE READER MODAL ================= -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true">
+    <div class="article-modal" id="articleModal">
+      <!-- Populated dynamically by app.js -->
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="cann-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4 id="footerAboutTitle">About CaNN</h4>
+        <p id="footerAboutDesc">The Cactus News Network (CaNN) is the premier independent news organization of The Desert Nation on INSMP. Dedicated to unvarnished reporting, biome history, and community satire.</p>
+      </div>
+      <div class="footer-col">
+        <h4 id="footerPortalsTitle">Community Portals</h4>
+        <ul>
+          <li><a href="https://insmp.miraheze.org/wiki/Main_Page" target="_blank" rel="noopener">Official INSMP Miraheze Wiki</a></li>
+          <li><a href="https://discord.com/invite/bwaaa" target="_blank" rel="noopener">Official INSMP Discord (discord.gg/bwaaa)</a></li>
+          <li><a href="https://dailyemerald.miraheze.org/wiki/Cactus_News_Network" target="_blank" rel="noopener">CaNN Emerald Wiki Page</a></li>
+          <li><a href="javascript:void(0)" onclick="switchCategory('Interviews')">Archived Staff Interviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 id="footerNationTitle">The Desert Nation</h4>
+        <p id="footerNationDesc">Member of the Dry Nations Confederation alongside the Grand Republic of Mesa and the Democratic Republic of Savanna. Protected by the One Star.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p id="footerCopyright">© 2026 Cactus News Network (CaNN) • Founded by Shio • Published for the Citizens of The Desert Nation & INSMP</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    function switchCategory(cat) {
+      state.currentCategory = cat;
+      const container = document.getElementById('categoryPills');
+      if (container) {
+        container.querySelectorAll('.pill-btn').forEach(b => {
+          b.classList.toggle('active', b.getAttribute('data-cat') === cat);
+        });
+      }
+      renderArticles();
+      window.scrollTo({ top: 380, behavior: 'smooth' });
+    }
+
+    function scrollToElement(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

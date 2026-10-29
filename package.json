@@ -1,0 +1,12 @@
+{
+  "name": "cann-desert-news-network",
+  "version": "1.0.0",
+  "description": "Cactus News Network (CaNN) - The Desert Nation News for INSMP",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["minecraft", "smp", "cann", "insmp", "news"],
+  "author": "Cactus News Network",
+  "license": "MIT"
+}

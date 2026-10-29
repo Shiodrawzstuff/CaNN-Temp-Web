@@ -1,0 +1,303 @@
+
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset='utf-8'>
+<title>CaNN Website User Manual / คู่มือการใช้งานเว็บไซต์</title>
+<!--[if gte mso 9]>
+<xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>100</w:Zoom>
+  <w:DoNotOptimizeForBrowser/>
+ </w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+  @page {
+    size: 21.0cm 29.7cm; /* A4 */
+    margin: 2.5cm 2.5cm 2.5cm 2.5cm;
+    mso-page-orientation: portrait;
+  }
+  body {
+    font-family: 'Segoe UI', 'Kanit', 'Sarabun', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #ffffff;
+  }
+  h1.doc-title {
+    font-size: 24pt;
+    font-weight: 800;
+    color: #1c307d;
+    text-align: center;
+    margin-top: 10pt;
+    margin-bottom: 4pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .doc-subtitle {
+    font-size: 14pt;
+    font-weight: 600;
+    color: #2563eb;
+    text-align: center;
+    margin-bottom: 18pt;
+  }
+  .doc-meta {
+    text-align: center;
+    font-size: 9.5pt;
+    color: #64748b;
+    border-top: 2px solid #1c307d;
+    border-bottom: 2px solid #1c307d;
+    padding: 8pt 0;
+    margin-bottom: 24pt;
+  }
+  h2 {
+    font-size: 14pt;
+    color: #1c307d;
+    border-bottom: 1.5pt solid #93c5fd;
+    padding-bottom: 4pt;
+    margin-top: 20pt;
+    margin-bottom: 8pt;
+  }
+  h3 {
+    font-size: 12pt;
+    color: #1e40af;
+    margin-top: 14pt;
+    margin-bottom: 4pt;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 8pt;
+    text-align: justify;
+  }
+  .lang-badge {
+    display: inline-block;
+    padding: 2pt 6pt;
+    font-size: 8pt;
+    font-weight: bold;
+    border-radius: 3pt;
+    text-transform: uppercase;
+    margin-right: 4pt;
+  }
+  .badge-en { background: #dbeafe; color: #1e40af; }
+  .badge-th { background: #fef3c7; color: #92400e; }
+  
+  .box-callout {
+    background-color: #eff6ff;
+    border-left: 4pt solid #1c307d;
+    padding: 10pt 14pt;
+    margin: 12pt 0;
+    font-size: 10.5pt;
+  }
+  .box-tip {
+    background-color: #f0fdf4;
+    border-left: 4pt solid #16a34a;
+    padding: 10pt 14pt;
+    margin: 12pt 0;
+    font-size: 10.5pt;
+  }
+  table.manual-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    font-size: 10pt;
+  }
+  table.manual-table th, table.manual-table td {
+    border: 1pt solid #cbd5e1;
+    padding: 8pt 10pt;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.manual-table th {
+    background-color: #1c307d;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  table.manual-table tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+  ul, ol {
+    margin-top: 0;
+    margin-bottom: 10pt;
+    padding-left: 20pt;
+  }
+  li {
+    margin-bottom: 4pt;
+  }
+  .key-pill {
+    background: #e2e8f0;
+    border: 1pt solid #cbd5e1;
+    padding: 1pt 5pt;
+    font-family: Consolas, monospace;
+    font-size: 9pt;
+    border-radius: 3pt;
+  }
+</style>
+</head>
+<body>
+
+<h1 class='doc-title'>🌵 CACTUS NEWS NETWORK (CaNN)</h1>
+<div class='doc-subtitle'>Official Website User Manual / คู่มือการใช้งานเว็บไซต์ทางการ</div>
+<div class='doc-meta'>
+  <strong>Publication:</strong> The Desert Nation News • <strong>Platform:</strong> INSMP Server Community • <strong>Version:</strong> 1.0 (Oct 2026)<br>
+  <strong>Bilingual Edition:</strong> English & ภาษาไทย • <strong>Author:</strong> CaNN Development & Editorial Team
+</div>
+
+<div class='box-callout'>
+  <p style='margin:0;'><strong>Overview / ภาพรวม:</strong><br>
+  Welcome to the official manual for the <strong>Cactus News Network (CaNN)</strong> digital web portal. This document is written in both English and Thai to provide a complete guide on navigating news archives, using interactive engagement features, playing the daily Sudoku, switching visual themes, and managing content.</p>
+</div>
+
+<!-- ================= SECTION 1: HOW TO OPEN ================= -->
+<h2>1. Quick Start & How to Open / วิธีเปิดเข้าใช้งานเว็บไซต์</h2>
+
+<p><span class='lang-badge badge-en'>EN</span> <strong>Opening Locally:</strong> You do not need any web hosting or complex installation to view the website. Simply navigate to the folder:
+<br><span class='key-pill'>C:\Users\us\Downloads\CaNN Temp Web</span> and double-click <strong>index.html</strong>. It will open immediately in your web browser (Google Chrome, Microsoft Edge, Mozilla Firefox, Brave, or Safari).</p>
+
+<p><span class='lang-badge badge-th'>TH</span> <strong>การเปิดใช้งานในเครื่อง:</strong> ไม่จำเป็นต้องติดตั้งโปรแกรมหรือเซิร์ฟเวอร์ใดๆ เพิ่มเติม สามารถเข้าไปที่โฟลเดอร์ <span class='key-pill'>C:\Users\us\Downloads\CaNN Temp Web</span> แล้วดับเบิลคลิกไฟล์ <strong>index.html</strong> หน้าเว็บไซต์จะเปิดขึ้นในเว็บเบราว์เซอร์ของคุณทันที</p>
+
+<p><span class='lang-badge badge-en'>EN</span> <strong>Optional Local Node Server:</strong> If you prefer serving over HTTP, open terminal/PowerShell in this folder and run: <span class='key-pill'>node server.js</span>, then open <strong>http://localhost:3000</strong>.</p>
+<p><span class='lang-badge badge-th'>TH</span> <strong>ตัวเลือกเปิดผ่าน Node.js Server:</strong> เปิด PowerShell แล้วพิมพ์คำสั่ง <span class='key-pill'>node server.js</span> จากนั้นเปิดเบราว์เซอร์ไปที่ <strong>http://localhost:3000</strong></p>
+
+<!-- ================= SECTION 2: TOP BAR & CONTROLS ================= -->
+<h2>2. Top Bar & Header Controls / แถบด้านบนและการควบคุม</h2>
+
+<table class='manual-table'>
+  <tr>
+    <th style='width:25%;'>Feature / ฟีเจอร์</th>
+    <th style='width:37%;'>English Description</th>
+    <th style='width:38%;'>คำอธิบายภาษาไทย</th>
+  </tr>
+  <tr>
+    <td><strong>Breaking News Ticker<br>(แถบตัววิ่งข่าวด่วน)</strong></td>
+    <td>Live scrolling marquee at the very top displaying real-time headlines. Hovering your mouse pauses the ticker for easy reading.</td>
+    <td>แถบข้อความตัววิ่งที่อยู่บนสุด แสดงพาดหัวข่าวด่วนแบบเรียลไทม์ เมื่อนำเมาส์ไปชี้ ตัววิ่งจะหยุดชั่วคราวเพื่อให้อ่านได้สะดวก</td>
+  </tr>
+  <tr>
+    <td><strong>Language Switcher<br>(ปุ่มสลับภาษา)</strong></td>
+    <td>Located in the top right bar (<span class='key-pill'>EN 🇬🇧</span> / <span class='key-pill'>TH 🇹🇭</span>). Instantly translates all interface text, articles, headlines, categories, and ads. Saves choice in browser storage.</td>
+    <td>ปุ่มสลับภาษาที่มุมบนขวา (<span class='key-pill'>EN 🇬🇧</span> / <span class='key-pill'>TH 🇹🇭</span>) เปลี่ยนภาษาทั้งเว็บทันทีโดยไม่ต้องโหลดหน้าใหม่ พร้อมบันทึกค่าจำไว้ในเบราว์เซอร์</td>
+  </tr>
+  <tr>
+    <td><strong>Dark Mode Toggle<br>(ปุ่มโหมดมืด / สว่าง)</strong></td>
+    <td>Pill button (<span class='key-pill'>🌙 Dark</span> / <span class='key-pill'>☀️ Light</span>). Switches between crisp newspaper white and midnight electric-blue dark mode. Saves choice automatically.</td>
+    <td>ปุ่ม (<span class='key-pill'>🌙 โหมดมืด</span> / <span class='key-pill'>☀️ โหมดสว่าง</span>) สำหรับสลับโทนสีระหว่างหน้ากระดาษขาวและโหมดกลางคืนโทนน้ำเงินเข้ม สบายสายตา</td>
+  </tr>
+  <tr>
+    <td><strong>Community Links<br>(ลิงก์คอมมูนิตี้)</strong></td>
+    <td>Direct shortcuts to the official <strong>INSMP Wiki</strong> (Miraheze) and the <strong>INSMP Discord Server</strong> (discord.gg/bwaaa).</td>
+    <td>ปุ่มทางลัดเชื่อมต่อไปยังวิกิทางการ <strong>INSMP Wiki</strong> และเซิร์ฟเวอร์ <strong>Discord</strong> ของ INSMP โดยตรง</td>
+  </tr>
+</table>
+
+<!-- ================= SECTION 3: NAVIGATION & DUAL VIEW ================= -->
+<h2>3. Navigation & Dual View Modes / เมนูนำทางและมุมมอง 2 แบบ</h2>
+
+<p><span class='lang-badge badge-en'>EN</span> <strong>Category Navigation:</strong> Use the main navbar to filter news by department:</p>
+<ul>
+  <li><strong>Frontpage (หน้าแรก):</strong> Shows the breaking hero lead story and all recent dispatches.</li>
+  <li><strong>Breaking News (ข่าวด่วน):</strong> Urgent server bulletins (e.g. Daily Emerald CEO assassination).</li>
+  <li><strong>Geopolitics & Factions (ภูมิรัฐศาสตร์):</strong> Treaties, Dry Nations Confederation, wars, alliances.</li>
+  <li><strong>Politics & Law (การเมืองและกฎหมาย):</strong> Constitution, elections, kelp & stew legislation.</li>
+  <li><strong>Special Interviews (บทสัมภาษณ์พิเศษ):</strong> Deep-dive interviews with server personalities (Lacha, Primal & Squid).</li>
+  <li><strong>Daily Sudoku (ซูโดกุ):</strong> Jumps directly to the interactive puzzle widget.</li>
+  <li><strong>Classified Ads (กระดานประกาศ):</strong> Jumps to community ads and services.</li>
+</ul>
+
+<div class='box-tip'>
+  <p style='margin:0;'><strong>Dual View Mode Feature / สลับโหมดการอ่าน:</strong><br>
+  Click the <strong>"📜 Newspaper Sheet View" (โหมดหน้าหนังสือพิมพ์)</strong> button on the right side of the navbar. This transforms the digital feed into an authentic two-column vintage newspaper broadsheet layout matching the original archive pages! Click it again to return to <strong>"📰 Digital Feed View"</strong>.</p>
+</div>
+
+<!-- ================= SECTION 4: READERS & LIKES INTERACTION ================= -->
+<h2>4. Interactive Readers & Likes System / ระบบนับผู้อ่านและปุ่มกดถูกใจ</h2>
+
+<p><span class='lang-badge badge-en'>EN</span> Every article card and modal includes live engagement buttons:</p>
+<ul>
+  <li><strong>👁️ Readers Counter (คนอ่านแล้ว):</strong> Shows the total number of verified readers. Clicking the button marks the article as read (<span class='key-pill'>✓ Read</span>), turns green, and increments the counter. Opening an article modal automatically marks it as read!</li>
+  <li><strong>❤️ Likes Counter (ถูกใจ):</strong> Shows community upvotes. Clicking toggles between empty heart (<span class='key-pill'>🤍</span>) and red heart (<span class='key-pill'>❤️</span>), updating the count live and saving your like in <span class='key-pill'>localStorage</span>.</li>
+</ul>
+
+<p><span class='lang-badge badge-th'>TH</span> ทุกบทความมีระบบตอบรับของผู้อ่านแบบเรียลไทม์:</p>
+<ul>
+  <li><strong>👁️ ปุ่มนับจำนวนคนอ่าน (Readers):</strong> แสดงยอดผู้เข้าอ่าน หากคลิกปุ่มจะขึ้นเครื่องหมาย <span class='key-pill'>✓ อ่านแล้ว</span> เป็นสีเขียว พร้อมเพิ่มยอดอ่าน หรือเมื่อคลิกเปิดอ่านข่าวฉบับเต็ม ระบบจะนับเป็น 1 ผู้อ่านให้อัตโนมัติ</li>
+  <li><strong>❤️ ปุ่มกดถูกใจ (Likes):</strong> สามารถคลิกเพื่อมอบหัวใจให้บทความนั้นๆ (<span class='key-pill'>🤍</span> เป็น <span class='key-pill'>❤️</span>) ยอดถูกใจจะเพิ่มขึ้นทันทีและบันทึกไว้ในเครื่องของคุณ</li>
+</ul>
+
+<!-- ================= SECTION 5: TODAY'S SUDOKU ================= -->
+<h2>5. How to Play "Today's Sudoku" / วิธีเล่นเกมซูโดกุประจำวัน</h2>
+
+<p><span class='lang-badge badge-en'>EN</span> Recreating the iconic puzzle featured on every edition of CaNN:</p>
+<ol>
+  <li><strong>Select Puzzle:</strong> Choose between Puzzle #1 (Casual), Puzzle #2 (Challenging), or Puzzle #3 (Master) from the dropdown.</li>
+  <li><strong>Select Cell:</strong> Click on any empty cell on the 9x9 grid (it will highlight in blue).</li>
+  <li><strong>Enter Number:</strong> Click a number button <span class='key-pill'>1</span> to <span class='key-pill'>9</span> on the numpad, or type the number on your physical keyboard.</li>
+  <li><strong>Erase:</strong> Click the <span class='key-pill'>✕</span> button or press <span class='key-pill'>Backspace</span> / <span class='key-pill'>Delete</span>.</li>
+  <li><strong>Check Solution:</strong> Click <span class='key-pill'>✓ Check Grid</span>. The game will notify you if there are conflicting duplicate numbers, show how many cells remain, or celebrate your victory!</li>
+  <li><strong>Reset:</strong> Click <span class='key-pill'>↺ Reset</span> to restore the puzzle to its initial state.</li>
+</ol>
+
+<p><span class='lang-badge badge-th'>TH</span> ถอดแบบมาจากเกมซูโดกุที่มีอยู่ในหนังสือพิมพ์ CaNN ทุกฉบับ:</p>
+<ol>
+  <li><strong>เลือกข้อปริศนา:</strong> เลือกปริศนาที่ต้องการเล่นจากเมนูดรอปดาวน์ (ระดับง่าย, ปานกลาง, หรือระดับเซียน)</li>
+  <li><strong>เลือกช่อง:</strong> คลิกเลือกช่องว่างที่ต้องการใส่ตัวเลข (ช่องจะเปลี่ยนเป็นสีฟ้าไฮไลต์)</li>
+  <li><strong>กรอกตัวเลข:</strong> กดปุ่มตัวเลข <span class='key-pill'>1</span> ถึง <span class='key-pill'>9</span> หรือกดแป้นตัวเลขบนคีย์บอร์ดของคุณ</li>
+  <li><strong>ลบตัวเลข:</strong> กดปุ่ม <span class='key-pill'>✕</span> หรือกดแป้น <span class='key-pill'>Backspace</span> บนคีย์บอร์ด</li>
+  <li><strong>ตรวจคำตอบ:</strong> คลิกปุ่ม <span class='key-pill'>✓ ตรวจคำตอบ</span> ระบบจะแจ้งเตือนหากมีตัวเลขซ้ำที่ผิดกฎ หรือแสดงความยินดีเมื่อแก้ปริศนาสำเร็จ</li>
+  <li><strong>เริ่มใหม่:</strong> คลิกปุ่ม <span class='key-pill'>↺ เริ่มใหม่</span> เพื่อรีเซ็ตกระดาน</li>
+</ol>
+
+<!-- ================= SECTION 6: SEARCH & FILTERING ================= -->
+<h2>6. Real-Time Search & Keywords / ระบบค้นหาข่าวแบบทันที</h2>
+
+<p><span class='lang-badge badge-en'>EN</span> Type any word in the search box (<span class='key-pill'>🔍 Search headlines...</span>). The feed filters in real time across headlines, article content, reporter bylines, and tags in both English and Thai. For example, search for: <em>Lacha, Mirage Tower, Kelp, Confederation, Solitaire, Fox, หรือ สตูว์</em>.</p>
+<p><span class='lang-badge badge-th'>TH</span> สามารถพิมพ์คำค้นหาในช่องค้นหาได้ทันที ระบบจะกรองข่าวที่ตรงกันแบบเรียลไทม์ รองรับการค้นหาทั้งภาษาไทยและอังกฤษ เช่น ค้นหา <em>Lacha, หอคอย, สาหร่าย, ลอบสังหาร, ประธานาธิบดี</em></p>
+
+<!-- ================= SECTION 7: EDITING & ADDING ARTICLES ================= -->
+<h2>7. How to Add New Articles & Lore / วิธีเพิ่มบทความใหม่ในอนาคต</h2>
+
+<p><span class='lang-badge badge-en'>EN</span> All news articles are organized cleanly inside the file <span class='key-pill'>data.js</span>. To add a new story, open <span class='key-pill'>data.js</span> in any text editor and add an entry inside the <span class='key-pill'>CANN_DATA.articles</span> array:</p>
+
+<div class='box-callout' style='background:#f8fafc; font-family:Consolas, monospace; font-size:9pt;'>
+{<br>
+&nbsp;&nbsp;id: "cann-99",<br>
+&nbsp;&nbsp;edition: "Issue 36",<br>
+&nbsp;&nbsp;date: "25 October 2026",<br>
+&nbsp;&nbsp;category: "Politics",<br>
+&nbsp;&nbsp;category_th: "การเมือง",<br>
+&nbsp;&nbsp;badge: "BREAKING",<br>
+&nbsp;&nbsp;badge_th: "ข่าวด่วน",<br>
+&nbsp;&nbsp;title: "Your English Headline Here",<br>
+&nbsp;&nbsp;title_th: "พาดหัวข่าวภาษาไทยตรงนี้",<br>
+&nbsp;&nbsp;subtitle: "English Subtitle",<br>
+&nbsp;&nbsp;subtitle_th: "หัวข้อย่อยภาษาไทย",<br>
+&nbsp;&nbsp;author: "Reporter Name",<br>
+&nbsp;&nbsp;author_th: "ชื่อนักข่าว",<br>
+&nbsp;&nbsp;lead: "Summary sentence...",<br>
+&nbsp;&nbsp;lead_th: "ประโยคสรุปข่าวภาษาไทย...",<br>
+&nbsp;&nbsp;content: "Full English text...",<br>
+&nbsp;&nbsp;content_th: "เนื้อหาข่าวฉบับเต็มภาษาไทย...",<br>
+&nbsp;&nbsp;tags: ["Tag1", "Tag2"],<br>
+&nbsp;&nbsp;tags_th: ["แท็ก1", "แท็ก2"],<br>
+&nbsp;&nbsp;baseReads: 100,<br>
+&nbsp;&nbsp;baseLikes: 25<br>
+}
+</div>
+
+<!-- ================= SECTION 8: CONTACT & CREDITS ================= -->
+<h2>8. Credits & Community Attribution / เครดิตและคอมมูนิตี้</h2>
+
+<ul>
+  <li><strong>Network:</strong> Cactus News Network (CaNN)</li>
+  <li><strong>Nation:</strong> The Desert Nation — Western Block / Dry Nations Confederation</li>
+  <li><strong>Server:</strong> INSMP (Official Wiki: <a href="https://insmp.miraheze.org/wiki/Main_Page">insmp.miraheze.org</a> | Discord: <a href="https://discord.com/invite/bwaaa">discord.gg/bwaaa</a>)</li>
+  <li><strong>Founding Director:</strong> Shio (@Shiodrawstuff)</li>
+  <li><strong>Special Mention:</strong> President Fox, VP Backrooms, Eccentric Buckle, Wiserobucman, Leclerc, Solitaire, dakhung, and tinynewengland.</li>
+</ul>
+
+<p style='text-align:center; margin-top:24pt; font-size:9pt; color:#64748b; border-top:1pt solid #cbd5e1; padding-top:10pt;'>
+  © 2026 Cactus News Network (CaNN) • Desert Nation News Agency • INSMP
+</p>
+
+</body>
+</html>
